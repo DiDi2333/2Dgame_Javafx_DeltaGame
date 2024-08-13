@@ -69,11 +69,13 @@ public class GameView extends Application{
 	public static Scene getRoot(Stage MainStage) {
 		if(first==0) {
 			//背景
+			/*
 			ImageView backgroud = new ImageView("test_backGroud.jpg");
 			backgroud.setPreserveRatio(true);
 			backgroud.setFitHeight(2.0*y);
 			backgroud.setOpacity(0.8);
 			root.getChildren().add(backgroud);
+			*/
 			
 			//路线设计
 			road = new ArrayList<Line>();
@@ -257,8 +259,8 @@ public class GameView extends Application{
 			fade_anim_label.setOnFinished(ClickEvent->{
 				ClickToGo = new Label("点击任意处以继续");
 				ClickToGo.setStyle("-fx-font-size: "+1.0/32.0*x+"px; -fx-text-fill: RED;");//通过css设置属性很方便 但会产生绑定
-				ClickToGo.setLayoutX(mid_position + 1.65/5.0*x);
-				ClickToGo.setLayoutY(1.0/4.0*y+1.0/4.0*y+1.0/25.0*y);
+				ClickToGo.setLayoutX(mid_position + 1.8/5.0*x);
+				ClickToGo.setLayoutY(2.0/4.0*y+6.0/25.0*y);
 				ClickToGo.setOpacity(0);
 				FadeTransition fade_anim_clicklabel = new FadeTransition();
 				fade_anim_clicklabel.setDuration(Duration.seconds(0.7));

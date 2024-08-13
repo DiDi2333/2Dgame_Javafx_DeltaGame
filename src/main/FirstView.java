@@ -84,14 +84,13 @@ public class FirstView extends Application{
 		Pane ChapterAndPlayerBattle = new Pane();
 		
 		Rectangle fade = new Rectangle(x,y);
+		/*
 		ImageView character = new ImageView("chara_01.jpg");//暂时只有一个
 		character.setLayoutX(0.5*x);
 		character.setPreserveRatio(true);
-		character.setFitHeight(y);
-		
-		
+		character.setFitHeight(y)
 		root.getChildren().add(character);
-		
+		*/
 		//ChapterAndPlayer 章节或玩家对战轮盘切换
 		ForBlankChapter Chapter = new ForBlankChapter("故事模式",new Image("file:Chara/Delta_test/Run01.png"));
 		ForBlankChapter PlayerBattle = new ForBlankChapter("玩家对战",new Image("file:Chara/Delta_test/Stand.png"));
